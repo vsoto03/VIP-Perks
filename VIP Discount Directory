@@ -1,0 +1,152 @@
+
+
+
+    
+    
+    Tune Up VIP Perks - Local Discounts
+    
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            background-color: #000;
+            color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-style: italic;
+        }
+        .category {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .category h2 {
+            color: #000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .business {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #000;
+        }
+        .business-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #000;
+        }
+        .address {
+            color: #666;
+            margin: 5px 0;
+        }
+        .offer {
+            color: #d32f2f;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        .phone {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #000;
+            color: white;
+            border-radius: 8px;
+        }
+    
+
+
+    
+        Tune Up VIP Perks
+        Show your VIP card and save at these local partners!
+    
+
+<div class="category">
+    <h2>🍕 DINING & FOOD</h2>
+    
+    <div class="business">
+        <div class="business-name">Mama's Italian Kitchen</div>
+        <div class="address">12345 Kingwood Dr, Kingwood</div>
+        <div class="offer">Show VIP card → 15% off your entire meal</div>
+        <div class="phone">Phone: (281) 358-MAMA</div>
+    </div>
+
+    <div class="business">
+        <div class="business-name">Smokey Joe's BBQ</div>
+        <div class="address">23456 Humble Westfield Rd, Humble</div>
+        <div class="offer">Show VIP card → Free side with any entree</div>
+        <div class="phone">Phone: (281) 446-RIBS</div>
+    </div>
+
+    <div class="business">
+        <div class="business-name">Coffee Corner Cafe</div>
+        <div class="address">34567 W Lake Houston Pkwy, Kingwood</div>
+        <div class="offer">Show VIP card → Buy one coffee, get one 50% off</div>
+        <div class="phone">Phone: (281) 312-BREW</div>
+    </div>
+</div>
+
+<div class="category">
+    <h2>🛒 RETAIL & SERVICES</h2>
+    
+    <div class="business">
+        <div class="business-name">Kingwood Auto Detail</div>
+        <div class="address">45678 Northpark Dr, Kingwood</div>
+        <div class="offer">Show VIP card → $20 off full detail service</div>
+        <div class="phone">Phone: (281) 359-WASH</div>
+    </div>
+
+    <div class="business">
+        <div class="business-name">Fitness First Gym</div>
+        <div class="address">56789 Gosling Rd, The Woodlands</div>
+        <div class="offer">Show VIP card → No enrollment fee + first month 50% off</div>
+        <div class="phone">Phone: (281) 367-LIFT</div>
+    </div>
+
+    <div class="business">
+        <div class="business-name">Pete's Hardware & More</div>
+        <div class="address">67890 FM 1960 E, Humble</div>
+        <div class="offer">Show VIP card → 10% off purchases over $50</div>
+        <div class="phone">Phone: (281) 540-TOOL</div>
+    </div>
+</div>
+
+<div class="category">
+    <h2>🎯 ENTERTAINMENT</h2>
+    
+    <div class="business">
+        <div class="business-name">Strike Zone Bowling</div>
+        <div class="address">78901 Deerbrook Mall Dr, Humble</div>
+        <div class="offer">Show VIP card → $5 off per person (groups of 4+)</div>
+        <div class="phone">Phone: (281) 446-BOWL</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Questions about VIP perks? Call us at (your salon number)</p>
+    <p>Local business interested in partnering? Contact us to join the program!</p>
+</div>
+
+
+
