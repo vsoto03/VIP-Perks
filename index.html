@@ -1,25 +1,30 @@
-
-
-
-    
-    
-    Tune Up VIP Advantage Card Perks
-    
-        body {
-            font-family: Arial, sans-serif;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Advantage Card - Partner Directory</title>
+    <style>
+            body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
         }
         .header {
-            text-align: center;
-            background-color: #000;
+            background: linear-gradient(135deg, #000 0%, #333 100%);
             color: white;
+            text-align: center;
             padding: 40px 20px;
+            border-radius: 12px;
             margin-bottom: 30px;
-            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         .header h1 {
             margin: 0;
@@ -29,231 +34,217 @@
         .header p {
             margin: 15px 0 0 0;
             font-size: 1.2em;
-            font-style: italic;
+            opacity: 0.9;
         }
-        .vip-benefits {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-            border-left: 6px solid #d32f2f;
-        }
-        .vip-benefits h2 {
-            color: #000;
-            margin-top: 0;
-            font-size: 1.8em;
-        }
-        .benefit-list {
-            list-style: none;
-            padding: 0;
-        }
-        .benefit-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-            font-size: 1.1em;
-        }
-        .benefit-list li:before {
-            content: "✓ ";
-            color: #d32f2f;
+        .advantage-badge {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1em;
             font-weight: bold;
-            margin-right: 8px;
+            display: inline-block;
+            margin-top: 15px;
         }
-        .membership-tiers {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+        .instructions {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .instructions h3 {
+            margin-top: 0;
+            color: #856404;
+            font-size: 1.3em;
+        }
+        .instructions p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .card-info {
+            background-color: #e8f5e8;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .card-info h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+        .coming-soon {
+            background-color: #e3f2fd;
+            border: 2px dashed #2196f3;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
             margin-bottom: 30px;
         }
-        .tier-card {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-            border-top: 5px solid #000;
+        .coming-soon h3 {
+            color: #1976d2;
+            margin-top: 0;
+            font-size: 1.5em;
         }
-        .tier-name {
+        .coming-soon p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .category-section {
+            margin-bottom: 35px;
+        }
+        .category-header {
+            background-color: #000;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .category-header h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .partner-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #d32f2f;
+            transition: transform 0.2s ease;
+        }
+        .partner-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        .partner-name {
             font-size: 1.4em;
             font-weight: bold;
             color: #000;
-            margin-bottom: 10px;
-        }
-        .tier-price {
-            font-size: 2em;
-            color: #d32f2f;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .tier-features {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .tier-features li {
-            padding: 5px 0;
-            color: #666;
-        }
-        .tier-features li:before {
-            content: "• ";
-            color: #d32f2f;
-            font-weight: bold;
-        }
-        .special-offers {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-            border-left: 6px solid #d32f2f;
-        }
-        .special-offers h2 {
-            color: #000;
-            margin-top: 0;
-        }
-        .offer-item {
-            background-color: #f9f9f9;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
-            border-left: 4px solid #d32f2f;
-        }
-        .offer-title {
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #000;
             margin-bottom: 8px;
         }
-        .offer-discount {
-            color: #d32f2f;
+        .partner-address {
+            color: #666;
+            margin-bottom: 12px;
+            font-size: 1em;
+        }
+        .discount-offer {
+            background-color: #d32f2f;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 25px;
             font-weight: bold;
             font-size: 1.1em;
+            margin-bottom: 12px;
+            display: inline-block;
         }
-        .offer-details {
+        .partner-phone {
             color: #666;
-            margin-top: 5px;
+            font-size: 0.95em;
         }
         .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 30px;
             background-color: #000;
             color: white;
-            border-radius: 10px;
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
         }
         .footer h3 {
             margin-top: 0;
+            color: #d32f2f;
+        }
+        .partnership-cta {
+            background-color: #2e7d32;
             color: white;
-        }
-        .contact-info {
-            font-size: 1.1em;
-            margin: 10px 0;
-        }
-        @media (max-width: 768px) {
-            .membership-tiers {
-                grid-template-columns: 1fr;
-            }
-            .header h1 {
-                font-size: 2.2em;
-            }
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
         }
     
 
 
     
-        Tune Up VIP Perks Directory
-        Exclusive benefits for our VIP members
-    
+        
+            🎯 VIP Advantage Card
+            Exclusive Partner Discounts
+            TUNE UP VIP MEMBERS ONLY
+        
 
-<div class="vip-benefits">
-    <h2>🎖️ VIP Member Benefits</h2>
-    <ul class="benefit-list">
-        <li>Personal liquor bottle selection</li>
-        <li>No contracts - month-to-month membership</li>
-        <li>Complimentary drinks with every service</li>
-        <li>Priority booking and scheduling</li>
-        <li>Exclusive member-only promotions</li>
-        <li>Cancel anytime with no hidden fees</li>
-    </ul>
-</div>
-
-<div class="membership-tiers">
-    <div class="tier-card">
-        <div class="tier-name">💇‍♂️ Hair VIP</div>
-        <div class="tier-price">$65/month</div>
-        <ul class="tier-features">
-            <li>Unlimited haircuts</li>
-            <li>Most popular tier</li>
-            <li>Complimentary drinks</li>
-            <li>Personal bottle selection</li>
-        </ul>
+    <div class="instructions">
+        <h3>💳 How to Use Your VIP Advantage Card</h3>
+        <p><strong>Show your VIP Advantage Card at any participating location below to receive exclusive discounts!</strong></p>
+        <p>Your VIP membership includes access to our growing network of local partner businesses.</p>
     </div>
 
-    <div class="tier-card">
-        <div class="tier-name">⚡ Mini VIP</div>
-        <div class="tier-price">$85/month</div>
-        <ul class="tier-features">
-            <li>Essential services package</li>
-            <li>Great value option</li>
-            <li>All VIP benefits included</li>
-        </ul>
+    <div class="card-info">
+        <h3>🌟 VIP Advantage Card Benefits</h3>
+        <p><strong>All VIP members automatically receive their VIP Advantage Card</strong><br>
+        No contracts • Month-to-month • Personal liquor bottle selection</p>
     </div>
 
-    <div class="tier-card">
-        <div class="tier-name">👨‍👦 Dad & Son VIP</div>
-        <div class="tier-price">$100/month</div>
-        <ul class="tier-features">
-            <li>Perfect for families</li>
-            <li>Unlimited cuts for both</li>
-            <li>Double the value</li>
-        </ul>
+    <div class="coming-soon">
+        <h3>🚀 Building Our Partner Network!</h3>
+        <p><strong>We're actively partnering with the best local businesses in Kingwood, Humble, and The Woodlands area.</strong></p>
+        <p>Our VIP Advantage Card program is modeled after successful promotional card systems, bringing you real savings at places you already love to visit.</p>
+        <p><em>Check back regularly as we add new partners to maximize your VIP benefits!</em></p>
     </div>
 
-    <div class="tier-card">
-        <div class="tier-name">🌟 Classic VIP</div>
-        <div class="tier-price">$130/month</div>
-        <ul class="tier-features">
-            <li>Unlimited all services</li>
-            <li>Haircuts, beard trims, waxing</li>
-            <li>Premium bottle selection</li>
-        </ul>
+    <div class="category-section">
+        <div class="category-header">
+            <h2>🍕 DINING & RESTAURANTS</h2>
+        </div>
+        
+        <div class="partner-card">
+            <div class="partner-name">Coming Soon - Local Restaurant Partners</div>
+            <div class="partner-address">Kingwood & Humble Area</div>
+            <div class="discount-offer">Exclusive VIP discounts</div>
+            <div class="partner-phone">📞 Partners being secured</div>
+        </div>
     </div>
 
-    <div class="tier-card">
-        <div class="tier-name">👑 Elite VIP</div>
-        <div class="tier-price">$179/month</div>
-        <ul class="tier-features">
-            <li>All premium services</li>
-            <li>Nail care & facials included</li>
-            <li>Top-shelf liquor selection</li>
-        </ul>
+    <div class="category-section">
+        <div class="category-header">
+            <h2>🛒 RETAIL & SERVICES</h2>
+        </div>
+        
+        <div class="partner-card">
+            <div class="partner-name">Coming Soon - Local Service Partners</div>
+            <div class="partner-address">Kingwood & Humble Area</div>
+            <div class="discount-offer">Exclusive VIP discounts</div>
+            <div class="partner-phone">📞 Partners being secured</div>
+        </div>
     </div>
 
-    <div class="tier-card">
-        <div class="tier-name">🧒 Kids VIP</div>
-        <div class="tier-price">$59/month</div>
-        <ul class="tier-features">
-            <li>Ages 12 and under</li>
-            <li>Unlimited kids services</li>
-            <li>Family-friendly experience</li>
-        </ul>
+    <div class="category-section">
+        <div class="category-header">
+            <h2>🎯 ENTERTAINMENT & RECREATION</h2>
+        </div>
+        
+        <div class="partner-card">
+            <div class="partner-name">Coming Soon - Entertainment Partners</div>
+            <div class="partner-address">Kingwood & Humble Area</div>
+            <div class="discount-offer">Exclusive VIP discounts</div>
+            <div class="partner-phone">📞 Partners being secured</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Questions About Your VIP Advantage Card?</h3>
+        <p><strong>Tune Up The Manly Salon</strong><br>
+        24345 Gosling Rd, Kingwood, TX<br>
+        📞 Contact us for VIP membership information</p>
+        
+        <div class="partnership-cta">
+            <h4>🤝 Local Business Owners</h4>
+            <p><strong>Interested in partnering with Tune Up's VIP Advantage Card program?</strong><br>
+            Contact us to join our exclusive partner network and reach our loyal VIP customer base!</p>
+        </div>
     </div>
 </div>
 
-<div class="special-offers">
-    <h2>🎯 Special Discounts</h2>
-    
-    <div class="offer-item">
-        <div class="offer-title">🪖 Military VIP Membership</div>
-        <div class="offer-discount">Special Military Pricing Available</div>
-        <div class="offer-details">Exclusive VIP membership rates for active military, veterans, police, and firefighters. Must show valid ID.</div>
-    </div>
 
-    <div class="offer-item">
-        <div class="offer-title">🚔 Hero Discount</div>
-        <div class="offer-discount">20% OFF All Services</div>
-        <div class="offer-details">For police, fire, and military personnel. Valid on all services with proper ID.</div>
-    </div>
-
-    <div class="offer-item">
-        <div class="offer-title">
 
